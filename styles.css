@@ -1,0 +1,140 @@
+/* Previous CSS remains the same */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fce4ec, #e3f2fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter-box {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to right, #ff69b4, #1e88e5);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.converter-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-section, .unit-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(to right, #ff69b4, #1e88e5);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    background: #ffebee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.result {
+    background: linear-gradient(to bottom right, #f8bbd0, #bbdefb);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.site-footer {
+    margin-left: -421px;
+    background: linear-gradient(to right, #ff69b4, #1e88e5);
+    color: white;
+    padding: 0px 91px;
+    margin-top: 530px;
+    border-radius: 10px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #e0e0e0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin: 10px 0;
+    }
+}

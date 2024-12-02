@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="converter-box"><i class="fa-solid fa-temperature-three-quarters"></i>
+            <div class="header">
+                 <h1>Temperature Converter</h1>
+            </div>
+            <div class="converter-content">
+                <div class="input-section">
+                    <label for="temperature">Enter Temperature</label>
+                    <input 
+                        type="text" 
+                        id="temperature" 
+                        placeholder="Type your temperature"
+                    >
+                </div>
+                <div class="unit-section">
+                    <label for="unit-select">Select Input Unit</label>
+                    <select id="unit-select">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                    </select>
+                </div>
+                <button id="convert-btn">Convert</button>
+                <div id="error-message" class="error-message"></div>
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+       
+        <div class="footer-bottom">
+            <p>&copy; 2024 MADE BY-ABHIJIT RANJAN</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
